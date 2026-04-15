@@ -203,7 +203,7 @@ finalGroups.push({
       var pSelection = [];
       if (sc.reject) { pSelection = ['REJECT', 'DIRECT']; }
       else if (['microsoft', 'apple', 'spotify'].indexOf(sc.key) !== -1) { pSelection = ['默认节点', 'DIRECT'].concat(regionSelectNames); }
-      else if (['googlefcm', 'douyin', 'zhihu', 'xiaohongshu'].indexOf(sc.key) !== -1) { pSelection = ['DIRECT', '默认节点'].concat(regionSelectNames); }
+      else if (['googlefcm', 'douyin', 'zhihu', 'xiaohongshu'].indexOf(sc.key) !== -1) { pSelection = ['DIRECT', '默认节点'].concat(filteredProxyNames); }
       else { pSelection = ['默认节点'].concat(regionSelectNames); }
       functionalGroups.push({ name: sc.name, type: 'select', proxies: pSelection, icon: sc.icon });
     }
