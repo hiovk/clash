@@ -4,7 +4,7 @@
 proxy-providers:
   my-subscription:
     type: http
-    url: "你的订阅链接放在这里" # 请替
+    url: "https://liangxin.xyz/api/v1/liangxin?OwO=b73a100eba8bd6cfede3ba162b6fe7e9" 
     interval: 3600
     path: ./proxies/my-subscription.yaml
     health-check:
